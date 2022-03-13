@@ -13,6 +13,14 @@
     <packaging>jar</packaging>
     <artifactId>authorization-server</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>auth</artifactId>
+        </dependency>
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -21,10 +29,7 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-security</artifactId>
     </dependency>
-    <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-oauth2</artifactId>
-    </dependency>
+
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
@@ -54,6 +59,7 @@
         <artifactId>spring-security-oauth2-autoconfigure</artifactId>
         <version>2.1.3.RELEASE</version>
     </dependency>
+
     </dependencies>
     <build>
         <plugins>

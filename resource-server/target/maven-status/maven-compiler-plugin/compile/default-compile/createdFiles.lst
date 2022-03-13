@@ -1,0 +1,4 @@
+com/karson/sso/resource/config/ResourceServerConfig.class
+com/karson/sso/resource/controller/HelloController.class
+com/karson/sso/resource/SpringSecurityOauth2ResourceApplication.class
+com/karson/sso/resource/config/SsoConfig.class

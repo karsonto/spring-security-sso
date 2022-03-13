@@ -1,0 +1,6 @@
+/Users/karson/IdeaProjects/ks-sso/authorization-server/src/main/java/com/karson/sso/server/config/AuthorizationServerConfig.java
+/Users/karson/IdeaProjects/ks-sso/authorization-server/src/main/java/com/karson/sso/server/SpringSecurityOauth2Application.java
+/Users/karson/IdeaProjects/ks-sso/authorization-server/src/main/java/com/karson/sso/server/controller/CaptchaController.java
+/Users/karson/IdeaProjects/ks-sso/authorization-server/src/main/java/com/karson/sso/server/service/CaptchaVerifySerivce.java
+/Users/karson/IdeaProjects/ks-sso/authorization-server/src/main/java/com/karson/sso/server/controller/GrantController.java
+/Users/karson/IdeaProjects/ks-sso/authorization-server/src/main/java/com/karson/sso/server/config/SecurityConfig.java

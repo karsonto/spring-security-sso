@@ -2,10 +2,7 @@ package com.karson.sso.server.controller;
 
 import org.springframework.security.oauth2.provider.AuthorizationRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,9 +20,10 @@ public class GrantController {
     }
 
     @GetMapping("/login")
-    public ModelAndView login(Map<String, Object> model, HttpServletRequest request) {
+    public ModelAndView login(Map<String, Object> model, HttpServletRequest request, @RequestParam(value = "code",required = false) String code) {
         ModelAndView view = new ModelAndView();
         view.setViewName("login");
+        view.addObject("code", code);
         return view;
     }
 

@@ -66,6 +66,17 @@
 	position: absolute;
 	margin: 10px 13px;
 }
+.rr{
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/login_ico.png);
+	background-position: -125px -68px;
+	position: absolute;
+	margin: 10px 13px;
+}
+
+
+
 .l-login{
 	position: absolute;
 	z-index: 1;

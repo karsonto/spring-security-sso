@@ -11,6 +11,10 @@ body {
 	font-family: 'Raleway', Calibri, Arial, sans-serif;
 }
 
+.text{
+	color: #FFFFFF;
+}
+
 a, button {
 	outline: none;
 }

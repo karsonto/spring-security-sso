@@ -30,7 +30,13 @@
                         <span class="us_uer"></span>
                         <input name="password" class="text" style="BACKGROUND-COLOR: transparent; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
                     </div>
-                    <div class="mb2">
+
+                    <div class="input_outer">
+                        <span class="rr"></span>
+                           <input name="code" class="text" style="BACKGROUND-COLOR: transparent;z-index:100;"value="" type="text" placeholder="请输入验证码">
+                           <img id="image"  style="vertical-align:middle;margin-top: 20px;width: 100px;"title="点击更换验证码"  onclick="reCheckcode()" />
+                    </div>
+                    <div class="mb2" style="margin-top: 85px;">
                         <a class="act-but submit" onclick="document.getElementById('loginForm').submit();" style="color: #FFFFFF">登录</a>
                     </div>
                 </form>
@@ -42,5 +48,17 @@
 <script src="js/EasePack.min.js"></script>
 <script src="js/rAF.js"></script>
 <script src="js/demo-1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+    function reCheckcode() {
+        $("#image").attr({"src": "/api/captcha?w" + Math.random()});
+    }
+    window.onload=function (ev) {
+        reCheckcode();
+    }
+</script>
+
+
+
 </body>
 </html>
