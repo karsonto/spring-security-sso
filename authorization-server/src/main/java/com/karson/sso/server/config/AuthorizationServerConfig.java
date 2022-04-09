@@ -98,17 +98,17 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
 
                 //这个相当于是client的域名,重定向给code的时候会跳转这个域名
-                .redirectUris("http://localhost:8081/login");
+                .redirectUris("http://localhost:8081/login")
 
-                /*.and()
+                .and()
 
-                .withClient("client2")
-                .secret(passwordEncoder.encode("123123"))
-                .resourceIds("resource1")
+                .withClient("c2")
+                .secret(passwordEncoder.encode("c2"))
+                .resourceIds("resource2")
                 .authorizedGrantTypes("authorization_code", "password", "client_credentials", "implicit", "refresh_token")
                 .scopes("all")
-                .autoApprove(false)
-                .redirectUris("http://www.qq.com");*/
+                .autoApprove(true)
+                .redirectUris("http://localhost:8082/login");
     }
 
 

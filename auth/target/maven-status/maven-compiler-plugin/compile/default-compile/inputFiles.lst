@@ -1,1 +1,5 @@
 /Users/karson/IdeaProjects/ks-sso/auth/src/main/java/com/karson/sso/auth/token/TokenConfig.java
+/Users/karson/IdeaProjects/ks-sso/auth/src/main/java/com/karson/sso/auth/authentication/MyWebAuthenticationDetails.java
+/Users/karson/IdeaProjects/ks-sso/auth/src/main/java/com/karson/sso/auth/utils/SecurityUtil.java
+/Users/karson/IdeaProjects/ks-sso/auth/src/main/java/com/karson/sso/auth/authentication/MyWebAuthenticationDetailsSource.java
+/Users/karson/IdeaProjects/ks-sso/auth/src/main/java/com/karson/sso/auth/authentication/JwtCustomerAccessTokenConverter.java

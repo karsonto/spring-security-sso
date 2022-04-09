@@ -1,6 +1,0 @@
-com/karson/sso/server/controller/CaptchaController.class
-com/karson/sso/server/SpringSecurityOauth2Application.class
-com/karson/sso/server/service/CaptchaVerifySerivce.class
-com/karson/sso/server/config/AuthorizationServerConfig.class
-com/karson/sso/server/controller/GrantController.class
-com/karson/sso/server/config/SecurityConfig.class

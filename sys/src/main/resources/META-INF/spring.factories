@@ -1,0 +1,2 @@
+org.springframework.boot.SpringApplicationRunListener=\
+com.karson.sso.sys.code.SpringApplicationRunListener

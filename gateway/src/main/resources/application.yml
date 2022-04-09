@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: gate_route
+          uri: http://localhost:8080
+          predicates:
+            ## 当请求的路径为gate、rule开头的时，转发到http://localhost:9023服务器上
+            - Path=/eaap/**
+          ### 请求路径前加上/app
+          filters:
+            - PreserveHostHeader
+            - StripPrefix=1
+            - MyPreserveHostHeader=/eaap
+#         filters:
+#           - StripPrefix=1
+#            - PrefixPath=/app
+server:
+  port: 8084
+logging:
+  level:
+    root: debug

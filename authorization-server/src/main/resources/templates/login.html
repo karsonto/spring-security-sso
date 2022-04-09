@@ -20,7 +20,7 @@
             <canvas id="demo-canvas"></canvas>
             <div class="logo_box">
                 <h3>Karson 統一登錄平台</h3>
-                <form action="/login"   method="post" autocomplete="off"  id="loginForm">
+                <form action="login"   method="post" autocomplete="off"  id="loginForm">
                     <input type="hidden" name="_csrf" th:value="${_csrf.getToken()}"/>
                     <div class="input_outer">
                         <span class="u_user"></span>
@@ -51,7 +51,7 @@
 <script src="js/jquery.min.js"></script>
 <script>
     function reCheckcode() {
-        $("#image").attr({"src": "/api/captcha?w" + Math.random()});
+        $("#image").attr({"src": "api/captcha?w" + Math.random()});
     }
     window.onload=function (ev) {
         reCheckcode();

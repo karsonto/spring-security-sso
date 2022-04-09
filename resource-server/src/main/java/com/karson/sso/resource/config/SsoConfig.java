@@ -12,7 +12,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SsoConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().authenticated().and().csrf().disable();
+        http.authorizeRequests().anyRequest().authenticated().and()
+                .logout()
+                .logoutSuccessUrl("http://localhost:8080/oauth/exit")
+                .and()
+                .csrf().disable();
     }
 
 }
